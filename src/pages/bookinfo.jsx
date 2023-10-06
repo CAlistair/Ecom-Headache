@@ -8,17 +8,11 @@ import Book from "../components/book";
 const BookInfo = ({ books, addToCart, cart }) => {
   const { id } = useParams();
   const book = books.find((book) => +book.id === +id);
-  const[ added, setAdded] = useState(false)
+  const [added, setAdded] = useState(false);
 
   function addBookToCart(book) {
     setAdded(true);
     addToCart(book);
-    console.log(book.id)
-  }
-
-  function bookExistOnCart() {
-    const dupe = cart.find(book => book.id === +id);
-    console.log(dupe)
   }
 
   return (
@@ -64,19 +58,9 @@ const BookInfo = ({ books, addToCart, cart }) => {
                     ipsa expedita.
                   </p>
                 </div>
-                {
-                  added ? (
-                    <Link to={`/cart`} className="book__link">
-                   <button className="btn">Checkout</button>
-                   </Link>
-                  )
-                  : (
-                    <button className="btn" onClick={() => addBookToCart(book)}>
-                      Add to Cart
-                      </button>
-                  )
-                }
-                
+                <button className="btn" onClick={() => addBookToCart(book)}>
+                  Add to Cart
+                </button>
               </div>
             </div>
           </div>
