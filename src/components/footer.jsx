@@ -1,5 +1,5 @@
 import React from "react";
-import Logo from "../assets/Library.svg"
+import Logo from "../assets/View.png"
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -19,7 +19,7 @@ const Footer = () => {
                         <Link to="/books" className="footer__link">Books</Link>
                         <Link to="/cart" className="footer__link">Cart</Link>
                     </div>
-                    <div className="footer__copyright">Copyright &copy; 2023 Library</div>
+                    <div className="footer__copyright">Copyright &copy; 2023 View</div>
                 </div>
             </div>
         </footer>

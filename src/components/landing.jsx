@@ -1,5 +1,5 @@
 import React from "react";
-import Undrawbooks from "../assets/Undraw_Books.svg"
+import Undraw from "../assets/undraw_monitor_iqpq.svg"
 
 const Landing = () => {
     return(
@@ -7,14 +7,14 @@ const Landing = () => {
             <header>
                 <div className="header__container">
                     <div className="header__description">
-                        <h1>UK's most awarded online library</h1>
-                        <h2>Find your dream book with <span className="purple"> library</span></h2>
+                        <h1><span className="blue"> UK's leading monitor distributors</span></h1>
+                        <h2>Find your dream monitor with <span className="blue"> View</span></h2>
                         <a href="#features">
-                            <button className="btn">Browse books</button>
+                            <button className="btn">Browse Monitors</button>
                         </a>
                     </div>
                     <figure className="header__img--wrapper">
-                        <img src={Undrawbooks} alt="" />
+                        <img src={Undraw} alt="" />
                     </figure>
                 </div>
             </header>
