@@ -25,7 +25,7 @@ nav {
   height: 80px;
   display: flex;
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.05);
-  background-color: white;
+  background-color: #242424;
   position: relative;
 }
 
@@ -78,7 +78,7 @@ button:active {
 }
 
 .btn {
-  background-color: #7342d6;
+  background-color: #1D84C1;
   color: white;
   padding: 12px 24px;
   font-size: 20px;
@@ -86,8 +86,8 @@ button:active {
   border: none;
 }
 
-.purple {
-  color: #7342d6;
+.blue {
+  color: #057ED6;
 }
 
 .logo {
@@ -109,7 +109,7 @@ button:active {
   font-size: 20px;
   font-weight: bold;
   padding: 8px;
-  color: #7342d6;
+  color: #6AD6D4;
 }
 
 .nav__list {
@@ -225,7 +225,7 @@ LANDING
 */
 
 #landing {
-  background-color: rgba(115, 66, 214, 0.1)
+  background-color: #82D3D2;
 }
 
 header {
@@ -337,8 +337,8 @@ HIGHLIGHTS
 }
 
 .highlight__img {
-  border: 2px solid #7342d65d;
-  color: #7342d6;
+  border: 2px solid #0E9B9F;
+  color: #49BEC1;
   width: 100px;
   height: 100px;
   display: flex;
@@ -363,7 +363,7 @@ FEATURES
 
 #features {
   padding-top: 8vw;
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: #82D3D2;
 }
 
 .books {
@@ -454,7 +454,7 @@ EXPLORE
 */
 
 #explore {
-  background-color: rgba(115, 66, 214, 0.1);
+  background-color: #82D3D2;
 }
 
 /* 
@@ -473,7 +473,6 @@ footer {
 
 .footer__logo--img {
   width: 160px;
-  filter: grayscale(1) invert(1);
 }
 
 .footer__link,
