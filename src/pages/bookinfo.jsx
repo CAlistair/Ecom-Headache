@@ -25,7 +25,7 @@ const BookInfo = ({ books, addToCart, cart }) => {
                 <FontAwesomeIcon icon="arrow-left" />
               </Link>
               <Link to="/books" className="book__link">
-                <h2 className="book__selected--title--top">Books</h2>
+                <h2 className="book__selected--title--top">Monitors</h2>
               </Link>
             </div>
             <div className="book__selected">
@@ -69,7 +69,7 @@ const BookInfo = ({ books, addToCart, cart }) => {
         <div className="books__container">
           <div className="row">
             <div className="book__selected--top">
-              <h2 className="book__selected--title--top">Recommeneded Tooks</h2>
+              <h2 className="book__selected--title--top">Recommeneded Monitors</h2>
             </div>
             <div className="books">
               {books
