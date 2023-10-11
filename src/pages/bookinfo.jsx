@@ -5,14 +5,16 @@ import Rating from "../components/rating";
 import Price from "../components/price";
 import Book from "../components/book";
 
-const BookInfo = ({ books, addToCart, cart }) => {
+const BookInfo = ({ cart, books, addToCart }) => {
   const { id } = useParams();
   const book = books.find((book) => +book.id === +id);
-  const [added, setAdded] = useState(false);
 
   function addBookToCart(book) {
-    setAdded(true);
     addToCart(book);
+  }
+
+  function monitorExists() {
+    const dupe = books.find(book => book.id === +id)
   }
 
   return (
@@ -58,9 +60,17 @@ const BookInfo = ({ books, addToCart, cart }) => {
                     ipsa expedita.
                   </p>
                 </div>
-                <button className="btn" onClick={() => addBookToCart(book)}>
-                  Add to Cart
-                </button>
+                {
+                  monitorExists() ? (
+                    <Link to={`/cart`} className="book__link">
+                      <button className="btn">Checkout</button>
+                    </Link>
+                  ) : (
+                    <button className="btn" onClick={() => addBookToCart(book)}>
+                      Add to Cart
+                    </button>
+                  )
+                }
               </div>
             </div>
           </div>
@@ -69,7 +79,9 @@ const BookInfo = ({ books, addToCart, cart }) => {
         <div className="books__container">
           <div className="row">
             <div className="book__selected--top">
-              <h2 className="book__selected--title--top">Recommeneded Monitors</h2>
+              <h2 className="book__selected--title--top">
+                Recommeneded Monitors
+              </h2>
             </div>
             <div className="books">
               {books
